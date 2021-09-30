@@ -4,7 +4,6 @@ import (
 	"crypto/rand"
 	"encoding/json"
 	"fmt"
-
 	"github.com/gorilla/websocket"
 )
 
@@ -31,6 +30,8 @@ type ResponseMessage struct {
 	Content     string                 `json:"content"`
 	Tag         string                 `json:"tag"`
 	Information map[string]interface{} `json:"information"`
+	Command     string                 `json:"command"`
+	Arguments   string                 `json:"arguments"`
 }
 
 // NewClient creates a new Client by generating a random token, and setting english as the
