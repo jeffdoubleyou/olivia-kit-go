@@ -30,8 +30,7 @@ type ResponseMessage struct {
 	Content     string                 `json:"content"`
 	Tag         string                 `json:"tag"`
 	Information map[string]interface{} `json:"information"`
-	Command     string                 `json:"command"`
-	Arguments   string                 `json:"arguments"`
+	Data        map[string]interface{} `json:"data"`
 }
 
 // NewClient creates a new Client by generating a random token, and setting english as the
